@@ -1,10 +1,13 @@
 import React from 'react';
 import Header from './components/header';
+import Carrucel from './components/carrucel';
 
 const Dashboard = () => {
   return (
     <div>
-      <Header />
+      <Carrucel>
+        <Header />
+      </Carrucel>
     </div>
   )
 }

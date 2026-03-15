@@ -2,11 +2,14 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    
+	/* Separa el logo del menu */
+    gap: 6px;
+    /* Da espacio arriba y a los lados*/
+    padding: 24px 16px 0;
 }
 
 .logo {
-	width: 150px;
+	width: 100px;
 	height: auto;
 }
 
@@ -14,6 +17,8 @@
 	display: flex;
 	justify-content: center;
 	gap: 18px;
+	/* Permite que el menú salte a otra línea en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
 .header-nav a {

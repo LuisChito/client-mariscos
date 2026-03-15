@@ -1,0 +1,59 @@
+.carrucel {
+  position: relative;
+  width: 100%;
+  /* Alto visible del hero */
+  height: 80vh;
+}
+
+.carrucel-slides {
+  /* Cubre todo el contenedor para apilar las imagenes */
+  position: absolute;
+  inset: 0;
+}
+
+.carrucel-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  /* Duracion total del ciclo 4s por cada imagen */
+  animation: carrucel-cycle 16s linear infinite;
+}
+
+/* Desfase de cada imagen para turnarse cada 4 segundos */
+.carrucel-image:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.carrucel-image:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.carrucel-image:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.carrucel-image:nth-child(4) {
+  animation-delay: 12s;
+}
+
+.carrucel-content {
+  /* Capa superior para mostrar Header u otro contenido */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index: 1;
+}
+
+/* Animacion del ciclo de las imagenes */
+@keyframes carrucel-cycle {
+  0% { opacity: 0; }
+  6% { opacity: 1; }
+  25% { opacity: 1; }
+  31% { opacity: 0; }
+  100% { opacity: 0; }
+}

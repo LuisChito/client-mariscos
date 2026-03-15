@@ -9,9 +9,10 @@ return (
         </div>
         <div>
             <nav className="header-nav">
-                <a href="/contact">Contactanos</a>
-                <a href="#menu">Ver Menú</a>
-                <a href="#reservations">Reservas</a>
+                <a href="/">INICIO</a>
+                <a href="/menu">MENÚ</a>
+                <a href="/reservas">SUCURSALES</a>
+                <a href="/contacto">CONTACTANOS</a>
             </nav>
         </div>
     </div>
