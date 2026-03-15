@@ -1,0 +1,27 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    
+}
+
+.logo {
+	width: 150px;
+	height: auto;
+}
+
+.header-nav {
+	display: flex;
+	justify-content: center;
+	gap: 18px;
+}
+
+.header-nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-nav a:hover {
+	color: #ff6a00;
+	text-decoration: underline;
+}
