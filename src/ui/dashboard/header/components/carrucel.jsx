@@ -21,7 +21,9 @@ const Carrucel = ({ children }) => {
           />
         ))}
       </div>
-      <div className="carrucel-content">{children}</div>
+      <div className="carrucel-content">
+        {children}
+      </div>
     </section>
   )
 }

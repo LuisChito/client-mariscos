@@ -3,6 +3,7 @@
   width: 100%;
   /* Alto visible del hero */
   height: 80vh;
+  overflow: hidden;
 }
 
 .carrucel-slides {
@@ -45,7 +46,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
