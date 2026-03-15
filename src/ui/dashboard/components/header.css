@@ -14,14 +14,12 @@
 }
 
 .header-nav {
-	display: flex;
-	justify-content: center;
-	gap: 18px;
-	/* Permite que el menú salte a otra línea en pantallas pequeñas */
-    flex-wrap: wrap;
+	text-align: center;
 }
 
 .header-nav a {
+	display: inline-block;
+	margin: 0 9px;
 	color: #fff;
 	text-decoration: none;
 }

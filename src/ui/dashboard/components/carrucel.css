@@ -17,7 +17,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  display: inline-block;
   opacity: 0;
   /* Duracion total del ciclo 4s por cada imagen */
   animation: carrucel-cycle 16s linear infinite;
