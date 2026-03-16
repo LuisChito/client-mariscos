@@ -1,7 +1,7 @@
 .carrucel {
   position: relative;
   width: 100%;
-  /* Alto visible del hero */
+  /* Tamaño de la imagen*/
   height: 80vh;
   overflow: hidden;
 }
@@ -9,6 +9,7 @@
 .carrucel-slides {
   /* Cubre todo el contenedor para apilar las imagenes */
   position: absolute;
+  /*Sirve para que no tenga bordes la imagen y se supergponga perfectamente sin importar el tamaño del contenedor*/
   inset: 0;
 }
 
