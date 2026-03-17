@@ -1,0 +1,13 @@
+.slogan {
+	padding: 70px 0 70px 0;
+	position : relative;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.slogan-image {
+	max-width: 60vh;
+	height: auto;
+	inset: 10px 0;
+}
