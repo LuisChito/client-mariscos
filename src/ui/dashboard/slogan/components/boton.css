@@ -1,0 +1,17 @@
+.boton {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.boton a {
+  color: #fff;
+  text-decoration: none;
+}
+.boton a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  background-color: #f7791f;
+  border-radius: 6px;
+}
