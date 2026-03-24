@@ -1,0 +1,30 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Separa el logo del menu */
+    gap: 6px;
+    /* Da espacio arriba y a los lados*/
+    padding: 24px 16px 0;
+}
+
+.logo {
+	width: 150px;
+	height: auto;
+}
+
+.header-nav {
+	text-align: center;
+}
+
+.header-nav a {
+	display: inline-block;
+	margin: 0 9px;
+	text-decoration: none;
+	color: #000;
+}
+
+.header-nav a:hover {
+	color: #ff6a00;
+	text-decoration: underline;
+}

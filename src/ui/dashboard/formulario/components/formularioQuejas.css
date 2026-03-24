@@ -1,0 +1,70 @@
+.formulario-wrapper {
+  max-width: 760px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 16px;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.formulario-wrapper h2 {
+  margin: 0 0 6px;
+}
+
+.formulario-wrapper p {
+  margin: 0 0 16px;
+}
+
+.formulario-quejas {
+  display: grid;
+  gap: 10px;
+}
+
+.formulario-quejas input,
+.formulario-quejas select,
+.formulario-quejas textarea,
+.formulario-quejas button {
+  font: inherit;
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+}
+
+.formulario-quejas button {
+  cursor: pointer;
+  background: #2a6f4f;
+  color: #ffffff;
+  border: none;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-row input {
+  width: auto;
+  margin: 0;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 6px;
+}
+
+.rating-stars input {
+  display: none;
+}
+
+.rating-stars label {
+  font-size: 26px;
+  color: #b6b6b6;
+  cursor: pointer;
+}
+
+.rating-stars input:checked + label {
+  color: #f0a500;
+}
