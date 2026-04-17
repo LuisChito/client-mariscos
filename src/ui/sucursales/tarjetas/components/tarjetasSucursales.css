@@ -35,7 +35,26 @@
 }
 
 .sucursal-card-contenido {
+  position: relative;
   flex: 1;
+}
+
+.sucursal-card-mapa {
+  margin-top: 16px;
+  width: 100%;
+  max-width: 100%;
+  /* Oculta cualquier desbordamiento para que el iframe respete las esquinas redondeadas */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Hace que el mapa ocupe todo el ancho disponible sin salirse del contenedor */
+/* display: block evita espacios extra, width: 100% lo adapta al contenedor, height fija la altura y border quita el borde */
+.sucursal-card-mapa iframe {
+  display: block;
+  width: 100%;
+  height: 280px;
+  border: 0;
 }
 
 .sucursal-card-contenido h3 {
