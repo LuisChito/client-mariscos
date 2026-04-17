@@ -4,7 +4,7 @@ import './boton.css'
 const boton = () => {
   return (
     <div className="boton">
-    <a href="/restaurantes">Sucursales</a>
+    <a href="/sucursales">Sucursales</a>
     </div>
   )
 }

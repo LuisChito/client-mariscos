@@ -6,12 +6,11 @@ import './sucursales.css'
 
 const sucursales = () => {
   return (
-    <div className='sucursales-page'>
-      <ImagenBanner>
-        <Header />
-      </ImagenBanner>
-      <TarjetasSucursales />
-    </div>
+    <>
+    <ImagenBanner>
+      <Header />
+    </ImagenBanner>
+    <TarjetasSucursales /></>
   )
 }
 
