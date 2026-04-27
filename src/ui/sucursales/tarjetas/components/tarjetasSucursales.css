@@ -1,10 +1,10 @@
-.sucursales-tarjetas {
+.sucursales{
   width: 92%;
   max-width: 1200px;
   margin: 32px auto;
 }
 
-.sucursales-tarjetas-grid {
+.sucursales-tarjetas {
   display: grid;
   /* Espacio entre las tarjetas */
   gap: 20px;
@@ -19,7 +19,7 @@
   padding: 16px;
 }
 
-.sucursal-card-imagen-container {
+.sucursal-imagen-cont {
   width: 220px;
   /* Evita que el contenedor se encoja */
   flex-shrink: 0;
