@@ -5,20 +5,7 @@ import favicon from '../../../../../public/imgs/favicon.png'
 const LoginCard = () => {
 
 let iniciarSesion = () => {
-  fetch('http://localhost:8080/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      username: 'usuario',
-      password: 'contraseña'
-    })
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log("Sesión iniciada:", data);
-  });
+  
 }
   return (
     <div className='contenedor-login'>

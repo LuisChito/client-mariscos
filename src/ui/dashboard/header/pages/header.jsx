@@ -5,12 +5,12 @@ import Text from '../components/text';
 
 const Dashboard = () => {
   return (
-    <div>
-      <Carrucel>
+    <>
+    <Carrucel>
         <Header />
         <Text />
-      </Carrucel>
-    </div>
+    </Carrucel>
+    </>
   )
 }
 

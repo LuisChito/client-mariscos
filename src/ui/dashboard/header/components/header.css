@@ -9,8 +9,10 @@
 }
 
 .logo {
-	width: 150px;
-	height: auto;
+	width: 120px;
+	height: 120px;
+	/* Escala el contenido para que quepa en el contenedor manteniendo su proporcion original, sin deformarse */
+	object-fit:contain;
 }
 
 .header-nav {
