@@ -31,7 +31,7 @@ const LoginCard = () => {
       }
       else{
         console.log('Inicio de sesion fallido');
-        navigate('/logi');
+        navigate('/login');
       }
     } catch (error) {
       console.error('Error de conexion: ', error);
