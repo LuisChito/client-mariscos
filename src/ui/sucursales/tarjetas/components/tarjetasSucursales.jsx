@@ -38,7 +38,11 @@ const TarjetasSucursales = () => {
                     title={`Mapa de ${sucursal.nombre}`}
                   />
                 </div>
-              ) : null}
+              ) : null} 
+              {/* 
+                Este operador ":" con el "null" sirve para indicar que 
+                si el mapa existe lo renderiza, si no no muestra nada:)
+              */}
             </div>
           </article>
         ))}
