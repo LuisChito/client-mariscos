@@ -10,14 +10,23 @@ import FormularioQuejas from '@ui/dashboard/formulario/pages/formulario'
 import Login from '@ui/auth/login/pages/login'
 
 
-const rutasProtegidas = ({children}) => {
+const RutasProtegidas = ({children}) => {
 	const sesion = localStorage.getItem('user_session');
 	// si no hay una sesion lo redirigimos al login
 	if (!sesion) {
 		return <Navigate to="/login" replace />;
 	}
-	// si hay sesion mostramos el elemento children
-    return children;
+	// concertimos el json a objeto para leer sus propiedades
+	const sesionUsuario = JSON.parse(sesion);
+	// leemos si es admin 'usuario' 
+	if (sesionUsuario.usuario === 'admin') {
+		return children;	
+	} else {
+		localStorage.removeItem('user_session');
+		alert('No eres admin');
+		// Si hay sesion pero no es admin lo mandamos pa fuera
+		return <Navigate to="/login" replace />;
+	}
 }
 
 export const router = createBrowserRouter([
@@ -35,9 +44,9 @@ export const router = createBrowserRouter([
 	{
 		path: 'admin/sucursales',
 		element: (
-			<rutasProtegidas>
+			<RutasProtegidas>
 				<FormularioQuejas/>
-			</rutasProtegidas>
+			</RutasProtegidas>
 		)
 	},
 
