@@ -1,12 +1,12 @@
 import React from 'react'
-import Sucursales from '../components/sucursales'
+import Dashboard from '../../components/dashboard'
 import Header from '../../components/header'
 
 const sucursalesAdmin = () => {
   return (
     <>
     <Header/>
-    <Sucursales/>
+    <Dashboard/>
     </>
   )
 }

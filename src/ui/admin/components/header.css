@@ -1,0 +1,28 @@
+.headerContainer {
+    display: flex;  /* sirve para cambiar la dirección en la que se acomodan los elementos dentro de un contenedor flex */
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.logo {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.header-nav {
+    text-align: center;
+}
+
+.header-nav a {
+    display: inline-block;
+    margin: 0 9px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    color: #ff6a00;
+    text-decoration: underline;
+}
