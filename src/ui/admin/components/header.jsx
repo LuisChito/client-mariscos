@@ -1,10 +1,12 @@
 import React from 'react'
 import logotipo from '../../../../public/imgs/logotipo.png'
+import BannerImagen from './bannerImagen'
 import './header.css'
 
 const header = () => {
   return (
-    <div className="headerContainer">
+    <BannerImagen>
+      <div className="headerContainer">
         <div className="logo">
         <img src={logotipo} alt="logo" className='logo' />
         </div>
@@ -18,6 +20,8 @@ const header = () => {
 
         </div>
     </div>
+    </BannerImagen>
+    
   )
 }
 

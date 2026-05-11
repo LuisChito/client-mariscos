@@ -4,7 +4,7 @@ import Dashboard from '@ui/dashboard/pages/dashboard'
 import Sucursales from '@ui/sucursales/pages/sucursales'
 
 // admin
-import SucursalesAdmin from '@ui/admin/sucursales/pages/sucursalesAdmin'
+import DashboardAdmin from '@ui/admin/dashboard/pages/dashboard'
 
 // Login
 import Login from '@ui/auth/login/pages/login'
@@ -45,7 +45,7 @@ export const router = createBrowserRouter([
 		path: 'admin/sucursales',
 		element: (
 			<RutasProtegidas>
-				<SucursalesAdmin/>
+				<DashboardAdmin/>
 			</RutasProtegidas>
 		)
 	},
