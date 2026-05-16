@@ -8,7 +8,7 @@ const header = () => {
     <BannerImagen>
       <div className="headerContainer">
         <div className="logo">
-        <img src={logotipo} alt="logo" className='logo' />
+        <img src="/imgs/logotipo.png" alt="logo" className="logo" />
         </div>
         <div className="opciones">
          <nav className="header-nav">

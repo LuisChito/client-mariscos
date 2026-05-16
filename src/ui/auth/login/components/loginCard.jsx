@@ -1,6 +1,5 @@
 import React from 'react'
 import './loginCard.css'
-import favicon from '../../../../../public/imgs/favicon.png'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -60,7 +59,7 @@ const LoginCard = () => {
         />
       </form>
       <p className="info">Dale click a la imagen para iniciar sesión</p>
-      <img src={favicon} alt="Logo" className='logo' onClick={iniciarSesion} />
+      <img src="/imgs/favicon.png" alt="Logo" className="logo" onClick={iniciarSesion} />
     </div>
   )
 }
