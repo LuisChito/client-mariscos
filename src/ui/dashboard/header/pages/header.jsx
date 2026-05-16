@@ -6,9 +6,9 @@ import Text from '../components/text';
 const Dashboard = () => {
   return (
     <>
+    <Header/>
     <Carrucel>
-        <Header />
-        <Text />
+        <Text/>
     </Carrucel>
     </>
   )

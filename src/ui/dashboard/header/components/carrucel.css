@@ -43,16 +43,22 @@
 }
 
 .carrucel-content {
-  /* Capa superior para mostrar Header u otro contenido */
+  /* capar para mostrar el contenido */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 63px; /* deja espacio para el header fijo */
+  box-sizing: border-box;
 }
 
-/* Animacion del ciclo de las imagenes */
+/* animacion del ciclo de las imagenes */
 @keyframes carrucel-cycle {
   0% { opacity: 0; }
   6% { opacity: 1; }
