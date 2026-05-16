@@ -29,6 +29,11 @@ const RutasProtegidas = ({children}) => {
 	}
 }
 
+const Logout = () => {
+    localStorage.clear(); // borrar el localStorage
+    return <Navigate to="/login" replace />; // redirigir de inmediato al login
+}
+
 export const router = createBrowserRouter([
 	// Rutas Normales
 	{
@@ -54,6 +59,10 @@ export const router = createBrowserRouter([
 	{
 		path: '/login',
 		element: <Login />,
-	}
+	},
+	{
+        path: '/logout',
+        element: <Logout />,
+    }
 
 ])
