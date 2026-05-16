@@ -6,9 +6,7 @@ import TarjetasSucursales from '../tarjetas/components/tarjetasSucursales'
 const sucursales = () => {
   return (
     <>
-    <ImagenBanner>
-      <Header />
-    </ImagenBanner>
+    <Header/>
     <Suspense fallback={<div>Cargando sucursales...</div>}>
       <TarjetasSucursales/>
     </Suspense>

@@ -3,16 +3,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* Reducimos el padding vertical a 6px para que no sume tanta altura */
-    padding: 6px 24px; 
+    /* Reducimos el padding vertical para menor altura */
+    padding: 6px 16px; 
     background-color: rgba(10, 36, 72, 0.985);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    /* Forzamos una altura máxima cómoda para un header moderno */
-    height: 70px; 
+    /* Forzamos una altura fija para el header (coincide con --header-height) */
+    height: 64px; 
     box-sizing: border-box; /* Evita que el padding sume tamaño extra a la altura */
 }
 
@@ -24,9 +24,8 @@
 }
 
 .logo {
-    /* En lugar de 1px, dale una altura controlada (ej. 50px) para que sea sutil */
-    height: 50px; 
-    width: auto; /* Deja que el ancho se calcule solo para que no se deforme */
+    height: 40px;
+    width: auto;
     object-fit: contain;
 }
 

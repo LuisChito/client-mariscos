@@ -54,7 +54,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 63px; /* deja espacio para el header fijo */
   box-sizing: border-box;
 }
 
