@@ -12,6 +12,7 @@ return (
         <div>
             <nav className="header-nav">
                 <a href="/admin/sucursales">Sucursales</a>
+                <a href="/admin/platos">Platos</a>
                 <a href="/statds">Estadisticas</a>
                 <a href="/logout">Cerrar Sesion</a>
             </nav>

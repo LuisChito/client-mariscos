@@ -5,6 +5,7 @@ import Sucursales from '@ui/sucursales/pages/sucursales'
 
 // admin
 import DashboardAdmin from '@ui/admin/dashboard/pages/dashboard'
+import PlatosAdmin from '@ui/admin/platos/pages/platos'
 
 // Login
 import Login from '@ui/auth/login/pages/login'
@@ -51,6 +52,14 @@ export const router = createBrowserRouter([
 		element: (
 			<RutasProtegidas>
 				<DashboardAdmin/>
+			</RutasProtegidas>
+		)
+	},
+	{
+		path: 'admin/platos',
+		element: (
+			<RutasProtegidas>
+				<PlatosAdmin/>
 			</RutasProtegidas>
 		)
 	},
