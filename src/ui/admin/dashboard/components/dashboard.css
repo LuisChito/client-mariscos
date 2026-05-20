@@ -1,0 +1,5 @@
+.error p {
+    color: #dc3545;           
+    font-weight: bold; /*negritas*/           
+    font-size: 14px;
+}

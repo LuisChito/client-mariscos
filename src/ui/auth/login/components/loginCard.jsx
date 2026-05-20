@@ -26,7 +26,7 @@ const LoginCard = () => {
         // Aqui guardamos el perfil si el inicio de sesion es exitoso
         localStorage.setItem('user_session', JSON.stringify(datosGuardar));
         console.log('Inicio de sesion exitoso');
-        navigate('/admin/sucursales');
+        navigate('/admin/dashboard');
       }
       else{
         console.log('Inicio de sesion fallido');

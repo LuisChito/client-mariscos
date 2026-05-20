@@ -47,7 +47,7 @@ export const router = createBrowserRouter([
 
 	// Rutas admin
 	{
-		path: 'admin/sucursales',
+		path: 'admin/dashboard',
 		element: (
 			<RutasProtegidas>
 				<DashboardAdmin/>
