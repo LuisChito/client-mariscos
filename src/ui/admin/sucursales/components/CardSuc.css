@@ -1,0 +1,71 @@
+.sucursales {
+  width: 92%;
+  max-width: 1200px;
+  /* quitamos el margen de arriba, luego solo le dejamos el de abajo */
+  margin: 0 auto 32px auto; 
+}
+
+.sucursales-tarjetas {
+  display: grid;
+  /* Espacio entre las tarjetas */
+  gap: 24px;
+}
+
+.sucursal-card {
+  display: flex;
+  gap: 20px;
+  color: #000000;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sucursal-imagen-cont {
+  width: 240px; /* Un poco más de ancho para equilibrar el mapa */
+  /* evita que el contenedor se encoja */
+  flex-shrink: 0;
+}
+
+.sucursal-card-imagen {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* rellena el contenedor sin deformar la imagen */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* forzamos que los textos y el mapa se organicen en una columna limpia */
+.sucursal-card-contenido {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0; /* evita desbordamientos de texto */
+}
+
+.sucursal-card-contenido h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.4rem;
+}
+
+.sucursal-card-contenido p {
+  margin: 0 0 16px 0; /* espacio para que respire la dirección antes del mapa */
+  /* mas espacio entre las lineas del texto */
+  line-height: 1.5;
+  color: #444444;
+}
+
+.sucursal-card-mapa {
+  margin-top: auto; /* empuja el mapa al fondo de la tarjeta si hay poco texto */
+  width: 100%;
+  /* ocutal cualquier desbordamiento para que el iframe respete las esquinas redondeadas */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.sucursal-card-mapa iframe {
+  display: block;
+  width: 100%;
+  height: 260px; /* hacer las imagenes mas pequeñas para un mejor cvista */
+  border: 0;
+}

@@ -6,6 +6,7 @@ import Sucursales from '@ui/sucursales/pages/sucursales'
 // admin
 import DashboardAdmin from '@ui/admin/dashboard/pages/dashboard'
 import PlatosAdmin from '@ui/admin/platos/pages/platos'
+import AdminSucursales from '../../ui/admin/sucursales/pages/AdminSucursales'
 
 // Login
 import Login from '@ui/auth/login/pages/login'
@@ -63,6 +64,14 @@ export const router = createBrowserRouter([
 			</RutasProtegidas>
 		)
 	},
+	{
+		path: 'admin/sucursales',
+		element: (
+			<RutasProtegidas>
+				<AdminSucursales/>
+			</RutasProtegidas>
+		)
+	},
 
 	//Login
 	{
@@ -73,5 +82,4 @@ export const router = createBrowserRouter([
         path: '/logout',
         element: <Logout />,
     }
-
 ])

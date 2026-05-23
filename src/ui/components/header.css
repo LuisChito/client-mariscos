@@ -18,13 +18,13 @@
 
 .header-logo {
     /* Le damos una altura máxima que se adapte al header */
-    height: 100%; 
+  
     display: flex;
     align-items: center;
 }
 
 .logo {
-    height: 40px;
+    height: 30px;
     width: auto;
     object-fit: contain;
 }
