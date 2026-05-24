@@ -1,0 +1,49 @@
+.opciones {
+    padding: 20px;
+    justify-content: center;
+    display:block;
+    width: 100%;
+    height: 90vh;
+    color: #000000;
+    background-color: #f8fafc;
+}
+
+.title {
+    font-size: 26px;
+}
+
+.selector {
+    padding: 10px;
+}
+
+.selector nav {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+} 
+
+.selector nav a {
+    display: inline-block;
+    padding: 10px 14px;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    color: #1f2937;
+}
+
+.selector nav a:hover {
+    text-decoration: underline;
+}
+
+
+.selector nav a.verde {
+    background: #1DB454;
+}
+
+.selector nav a.amarillo {
+    background: #FACC15;
+}
+
+.selector nav a.rojo {
+    background: #EF4444;
+}
