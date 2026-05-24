@@ -4,8 +4,7 @@ import { PieChart } from '@mui/x-charts/PieChart';
 import './dashboard.css'
 
 const Dashboard = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(0);
 
   // ejecuta el fetch una sola vez al cargar el componente para traer los datos de la API
   useEffect(() => {
@@ -14,31 +13,8 @@ const Dashboard = () => {
       .then((res) => res.json())
       .then((resultado) => {
         setData(resultado);
-        setLoading(false);
       })
-      .catch((error) => {
-        console.error("Error al traer los datos del dashboard:", error);
-        setLoading(false);
-      });
   }, []);
-
-  // mientras la API responde, mostramos una pantalla de carga limpia sin nada
-  if (loading) {
-    return (
-      <Box sx={{ display:'flex', justifyContent:'center', alignItems:'center', height:'80vh' }}>
-        <CircularProgress size={50} />
-      </Box>
-    );
-  }
-
-  // si no trae nada la api ponemos el 
-  if (!data) {
-    return (
-      <div className="error">
-        <p>Error al consultar la API</p>
-      </div>
-    );
-  }
 
   // calculamos las inactivas
   const sucInactivas = data.sucTotales - data.sucActivas;
