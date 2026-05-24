@@ -1,7 +1,17 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './selector.css'
 
 const Selector = () => {
+  const [data, setdata] = useState(0);
+  useEffect(() => {
+    fetch('http://localhost:3001/todasSuc')
+    .then((res) => res.json())
+    .then((response) => {
+      setdata(response);
+    }
+    )
+  }, [])
+
   return (
     <>
     <section className='opciones'>
