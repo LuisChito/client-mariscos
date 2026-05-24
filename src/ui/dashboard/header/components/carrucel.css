@@ -16,10 +16,10 @@
 
 .carrucel-image {
   position: absolute;
-  inset: 0;
+  inset: 0; /* se estira para ocupar todo el contenedor */
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* hace que la imagen llene el espacio sin deformarse */
   opacity: 0;
   /* Duracion total del ciclo 4s por cada imagen */
   animation: carrucel-cycle 16s linear infinite;

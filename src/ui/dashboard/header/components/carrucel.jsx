@@ -8,14 +8,13 @@ const images = [
   '/imgs/layout/header/plato.jpg',
 ]
 
-const Carrucel = ({ children }) => {
+const Carrucel = ({children }) => {
 
   return (
     <section className="carrucel">
       <div className="carrucel-slides">
-        {images.map((image, index) => (
+        {images.map((image) => (
           <img
-            key={index}
             src={image}
             className="carrucel-image"
           />
