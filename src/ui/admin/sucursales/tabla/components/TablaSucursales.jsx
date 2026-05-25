@@ -28,14 +28,6 @@ const TablaSucursales = () => {
       if (!res.ok) {
         throw new Error('No se pudo actualizar el status')
       }
-
-      setdata((prev) =>
-        prev.map((sucursal) =>
-          sucursal.nombre === nombre
-            ? { ...sucursal, status: nuevoStatus }
-            : sucursal
-        )
-      )
     } catch (_error) {
       alert('Error al cambiar el status')
     }
@@ -53,8 +45,6 @@ const TablaSucursales = () => {
       if (!res.ok) {
         throw new Error('No se pudo eliminar la sucursal')
       }
-
-      setdata((prev) => prev.filter((sucursal) => sucursal.nombre !== nombre))
     } catch (_error) {
       alert('Error al eliminar la sucursal')
     }
