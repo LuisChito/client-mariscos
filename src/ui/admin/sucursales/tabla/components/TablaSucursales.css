@@ -19,3 +19,31 @@
     font-size: 35px;
     flex: 1;
 }
+
+.tabla-sucursales-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-sucursales {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #000000;
+}
+
+.tabla-sucursales thead tr {
+    background: rgba(255, 106, 0);
+}
+
+.tabla-sucursales th,
+.tabla-sucursales td {
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    color: #000000;
+}
