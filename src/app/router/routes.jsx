@@ -3,6 +3,7 @@ import { createBrowserRouter, Navigate } from 'react-router-dom'
 import Dashboard from '@ui/dashboard/pages/dashboard'
 import Sucursales from '@ui/sucursales/pages/sucursales'
 import Contactanos from '../../ui/contactanos/pages/Contactanos'
+import ImagenesPage from '../../ui/menu/pages/ImagenesPage'
 
 // admin
 import DashboardAdmin from '@ui/admin/dashboard/pages/dashboard'
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
 	{
 		path: '/contactanos',
 		element: <Contactanos/>
+	},
+	{
+		path: '/menu',
+		element: <ImagenesPage/>
 	},
 
 	// Rutas admin
