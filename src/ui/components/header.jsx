@@ -14,7 +14,7 @@ return (
                 <a href="/">INICIO</a>
                 <a href="/menu">MENÚ</a>
                 <a href="/sucursales">SUCURSALES</a>
-                <a href="/contacto">CONTACTANOS</a>
+                <a href="/contactanos">CONTACTANOS</a>
                 <a href="/login">LOGIN</a>
             </nav>
         </div>

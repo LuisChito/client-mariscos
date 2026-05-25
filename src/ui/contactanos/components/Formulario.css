@@ -1,0 +1,58 @@
+.contenedorFormulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: Arial;
+}
+
+.contenedorFormulario form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+}
+
+.contenedorFormulario label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #000000;
+    font-size: 14px;
+}
+
+.contenedorFormulario input[type="text"],
+.contenedorFormulario select,
+.contenedorFormulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    box-sizing: border-box; /* evta que los inputs se salgan del contenedor */
+    font-size: 14px;
+    background-color: #f5eded;
+}
+
+.contenedorFormulario textarea {
+    min-height: 100px;
+}
+
+/* Estilo del botón de enviar */
+.contenedorFormulario button {
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.contenedorFormulario button:hover {
+    background-color: #1e5ba0;
+}
