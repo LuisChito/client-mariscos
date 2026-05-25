@@ -71,20 +71,22 @@ const TablaSucursales = () => {
           <tbody>
             {data.length > 0 ? (
               data.map((sucursal) => (
-                <tr key={sucursal.nombre}>
+                <tr>
                   <td>{sucursal.nombre}</td>
                   <td>{sucursal.direccion}</td>
                   <td>{sucursal.status ? 'Activo' : 'Inactivo'}</td>
                   <td>
                     <button
                       type="button"
+                      className="btn btn-status"
                       onClick={() => cambiarStatus(sucursal.nombre, sucursal.status)}
                     >
                       Status
                     </button>
-                    {' '}
+
                     <button
                       type="button"
+                      className="btn btn-eliminar"
                       onClick={() => eliminarSucursal(sucursal.nombre)}
                     >
                       Eliminar
@@ -93,9 +95,9 @@ const TablaSucursales = () => {
                 </tr>
               ))
             ) : (
-              <tr>
-                <td colSpan="4">Sin sucursales</td>
-              </tr>
+              <>
+              {console.log("Datos no encontrados")}
+              </>
             )}
           </tbody>
         </table>
