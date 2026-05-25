@@ -1,20 +1,21 @@
-.cont{
+.video-container{
     text-align: center;
     padding: 10px;
 }
 
-.text{
+.video-text{
     width: fit-content;
     margin: 0 auto;
     text-align: center;
 }
 
-.textoloco{
+.video-title{
     display: inline-block;
     font-family: Arial;
     font-size: 35px;
-    text-decoration: 1px;
     border-bottom: 4px solid rgba(255, 106, 0);
+    margin-bottom: 15px;
+    padding: 12px;
 }
 
 iframe {
