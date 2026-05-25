@@ -1,0 +1,12 @@
+.cont-thorario {
+    display:flexbox;
+    text-align: center;
+    width: 100%;
+
+}
+
+p{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
