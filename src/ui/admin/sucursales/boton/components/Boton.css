@@ -1,0 +1,16 @@
+.boton-modal-wrapper {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+    background-color: rgba(255, 106, 0);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.boton-modal-trigger {
+	cursor: pointer;
+}
+
+.boton-modal-wrapper :hover{
+    border-radius: 10px;    
+}

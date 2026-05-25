@@ -1,0 +1,21 @@
+.cont-tablas-sucursales{
+    padding: 20px;
+    width: 100%;
+    min-height: 90vh;
+    color: #000000;
+    background-color: #f8fafc;
+}
+
+.sucursales-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+}
+
+.sucursales-title {
+    margin: 15px 0 0;
+    font-size: 35px;
+    flex: 1;
+}
