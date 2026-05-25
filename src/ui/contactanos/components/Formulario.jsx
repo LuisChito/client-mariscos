@@ -4,6 +4,9 @@ import './Formulario.css'
 const Formulario = () => {
   return (
     <div className="contenedorFormulario">
+        <div className="textoPq">
+            <p>Contactanos</p>
+        </div>
         <form action="">
             <div className="">
                 <label htmlFor="nombre">Nombre completo:</label>
