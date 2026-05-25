@@ -1,0 +1,22 @@
+.cont{
+    text-align: center;
+    padding: 10px;
+}
+
+.text{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.textoloco{
+    display: inline-block;
+    font-family: Arial;
+    font-size: 35px;
+    text-decoration: 1px;
+    border-bottom: 4px solid rgba(255, 106, 0);
+}
+
+iframe {
+    border-radius: 10px;
+}
