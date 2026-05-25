@@ -1,0 +1,27 @@
+.horario-container {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.horario-table {
+	width: 50%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	text-align: center;
+	background: #ffffff;
+	border-radius: 15px;
+	overflow: hidden;
+	color: #000000;
+}
+
+.horario-table thead tr {
+	background: rgba(255, 106, 0);
+}
+
+.horario-table th,
+.horario-table td {
+	padding: 12px;
+	border: 1px solid #d9d9d9;
+	color: #000000;
+}
